@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bitter:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <script src="https://kit.fontawesome.com/5edaa3b244.js" crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+    <div class="list-container">
+
+        <div>
+            <h1>TO-DO LIST</h1>
+        </div>
+
+        <div class="list-add">
+            <i class="fa-solid fa-circle circle-icon" style="color: #eba3f5;"></i>
+            <i class="fa-solid fa-circle circle-icon" style="color: #72a0ee;"></i>
+            <i class="fa-solid fa-circle circle-icon" style="color: #eab934;"></i>
+            <input type="text" id="listItem" class="input-box" placeholder="Add a new Task">
+            <button class="btn" onclick="add(event)"><i class="fa-solid fa-plus plus-icon"></i></button>
+        </div>
+
+        <div class="list-items" id="todoList">
+
+            <div class="items">
+                HomeWork
+                <button class="btn done" onclick="del(event)">DONE</button>
+            </div>
+            <div class="items">
+                HTML CSS Workshop
+                <button class="btn done" onclick="del(event)">DONE</button>
+            </div>
+
+        </div>
+    </div>
+    <script src="index.js"></script>
+    <script src="https://kit.fontawesome.com/5edaa3b244.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
